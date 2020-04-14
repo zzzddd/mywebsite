@@ -1,0 +1,571 @@
+.App {
+  text-align: center;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.home{
+  width: 100%;
+  display: flex;
+}
+
+.homeLeft {
+  width: 50%;
+  height: 100vh;
+  background: rgb(225,225,225);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative
+}
+
+.homeRight {
+  width: 50%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative
+
+}
+
+.LRimages {
+  width: 50vh;
+  height: 100vh;
+}
+
+.firstName {
+  position: absolute;
+  top: 15vh;
+  right: .4vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 3rem !important;
+  font-weight: 200 !important;
+  display: block !important;
+  margin-block-start: 0.67em !important;
+  margin-block-end: 0.67em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+}
+
+.lastName {
+  position: absolute;
+  top: 15vh;
+  left: .7vh;
+  color: white; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 3rem !important;
+  font-weight: 200 !important;
+  display: block !important;
+  margin-block-start: 0.67em !important;
+  margin-block-end: 0.67em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+}
+
+.fsd {
+  position: absolute;
+  top: 50vh;
+  right: -15vh;
+  transform: rotate(-90deg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 225% !important;
+  font-weight: 200 !important;
+  display: block !important;
+  margin-block-start: 0.83em !important;
+  margin-block-end: 0.83em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+}
+
+.home-nav {
+  position: absolute;
+  top: 33vh;
+  left: 1.5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 150%;
+  margin: 4vh 0;
+  /* font-weight: 200; */
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  background: rgb(225,225,225);
+  position: relative;
+}
+
+.carousel {
+  width: 80%;
+  height: 42vh;
+  margin: 15vh auto 0;
+  z-index: 11;
+}
+
+.shadow {
+  width: 100%;
+  position: absolute;
+  bottom: .5vh;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%
+}
+
+.nav-items {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+  font-size: 125%;
+  font-weight: 300;
+}
+
+.nav-name {
+  text-decoration: none;
+  color: black;
+  font-size: 225%;
+  font-weight: 400;
+}
+
+.nav-items-w {
+  width: 50%;
+}
+
+.nav-item-w {
+  text-decoration: none;
+  color: white;
+  margin: 0 5%;
+  font-size: 125%;
+  font-weight: 300;
+}
+
+.nav-name-w {
+  text-decoration: none;
+  color: white;
+  font-size: 225%;
+  font-weight: 400;
+}
+
+.about-div {
+  width: 100%;
+  height: 100vh;
+  background: rgb(225,225,225);
+  overflow: hidden;
+}
+
+.about-text {
+  width: 70%;
+  font-size: 195%;
+  font-weight: 300;
+  text-align: center;
+  margin: 35vh auto;
+}
+
+.me-div {
+  width: 100%;
+  position: absolute;
+  top: 18vh;
+  text-align: center;
+}
+
+.me {
+  width: 22.5vh;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.links-bar {
+  height: 25%;
+  width: 5%;
+  min-width: 6vh;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 1000000000;
+}
+
+.linkedin {
+  width: 65%;
+  height: 12%;
+  background-image: url(./images/linkedinb.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 25% auto 0;
+  max-width: 3vh;
+}
+
+.github {
+  width: 70%;
+  height: 12%;
+  background-image: url(./images/githublogob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 5% auto;
+  max-width: 3vh;
+}
+
+.twitter {
+  width: 75%;
+  height: 12%;
+  background-image: url(./images/twitterb.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto 25%; 
+  max-width: 3vh;
+}
+
+
+.linkedinw {
+  width: 65%;
+  height: 12%;
+  background-image: url(./images/linkedinw.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 25% auto 0;
+  max-width: 3vh;
+}
+
+.githubw {
+  width: 70%;
+  height: 12%;
+  background-image: url(./images/githublogow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 5% auto;
+  max-width: 3vh;
+}
+
+.twitterw {
+  width: 75%;
+  height: 12%;
+  background-image: url(./images/twitterw.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto 25%;  max-width: 22px;
+  max-width: 3vh;
+}
+
+.footer {
+  position: absolute;
+  bottom: .5vh;
+  left: 10%;
+}
+
+.contact {
+  width: 65%;
+  height: 60%;
+  margin: 15vh auto 0;
+}
+
+.contact-form {
+  width: 92%;
+  height: 60%;
+  background: rgb(225,225,225);
+  padding: 3vh;
+  border: 2px solid rgb(150, 150, 150);
+  border-radius: 15px;
+}
+
+.contact-div {
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+.contact-me {
+  color: white;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  font-size: 250% !important;
+  font-weight: 200 !important;
+  display: block !important;
+  margin-block-start: 0.83em !important;
+  margin-block-end: 0.83em !important;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+}
+
+
+.top-contact {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  justify-content: space-between;
+}
+
+.top-field {
+  width: 47.5%;
+}
+
+.top-input {
+  width: 97.5%;
+  height: 70%;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.text-input {
+  width: 98.75%;
+  height: 85%;
+  border-left: 2px solid rgb(154,154,154);
+  border-top: 2px solid rgb(154,154,154);
+  border-right: 2px solid rgb(238,238,238);
+  border-bottom: 2px solid rgb(238,238,238);
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.message-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3vh 0 0;
+  height: 65%;
+}
+
+.contact-button {
+  display: block;
+  width: 20%;
+  height: 12.5%;
+  border-radius: 5px;
+  margin: 1.5vh auto 0;
+}
+
+.labels {
+  font-size: 115%;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.project-div {
+  width: 65vh;
+  height: 42vh;
+  /* min-height: 424px; */
+  /* min-width: 615px; */
+  background:white;
+  border: 2px solid rgb(150, 150, 150);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-height: 922px) {
+  .project-title {
+    font-size: 125%;
+  }
+  /* .project-text {
+    font-size: 80%;
+    font-weight: 500;
+  } */
+}
+
+@media screen and (max-height: 759px) {
+  .project-title {
+    font-size: 110%;
+  }
+  /* .project-text {
+    font-size: 70%;
+    font-weight: 500;
+  } */
+}
+
+@media screen and (max-height: 700px) {
+  .project-title {
+    font-size: 90%;
+  }
+  .project-text {
+    font-size: 80%;
+  }
+  .about-text {
+    font-size: 155%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-text {
+    font-size: 175%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-text {
+    font-size: 155%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-text {
+    font-size: 125%;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .project-title {
+    font-size: 80%;
+  }
+  .project-text {
+    font-size: 70%;
+  }
+}
+
+.project-div-top {
+  padding: .5vh;
+}
+
+.project-image {
+  width: 100%;
+  height: 18vh
+}
+
+.project-title {
+  text-align: center;
+  margin: 0;
+  height: 3.2vh;
+  /* color: white; */
+}
+
+.project-text {
+  text-align: center;
+  padding: 1vh;
+  height: 6vh;
+  /* color: white; */
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(225,225,225);
+  height: 5vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 2px solid rgb(184,184,184);
+}
+
+.project-link-div {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.project-link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  font-size: 120%;
+  font-weight: 300;
+}
+
+.project-link:hover {
+  font-weight: 500;
+}
+
+.project-link-left {
+  border-right: 1px solid rgb(150,150,150);
+  border-bottom-left-radius: 10px;
+}
+.project-link-right {
+  border-left: 1px solid rgb(150,150,150);
+  border-bottom-right-radius: 10px;
+}
+
+.project-link-div:hover {
+  background: rgb(200,200,200);
+}
+
+.project-stack {
+  width: 100%;
+  height: 6.7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.project-stack-image {
+  height: 50%
+}
+
+.artist-a {
+  background-color:black;
+  color:white;
+  text-decoration:none;
+  padding:4px 6px;
+  font-size:12px;
+  font-weight:bold;
+  line-height:1.2;
+  display:inline-block;
+  border-radius:3px
+}
+
+.artist-span {
+  display:inline-block;
+  padding:2px 3px
+}
+
+.artist-svg {
+  height:12px;
+  width:auto;
+  position:relative;
+  vertical-align:middle;
+  top:-2px;
+  fill:white;
+}
